@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "AbrilFatface-Regular";
+    src: url("AbrilFatface-Regular.otf");
+}
+@font-face{
+    font-family: "Allerta-Regular";
+    src: url("Allerta-Regular.otf");
+}
+
+.container {
+  background-color: rgb(195, 215, 235);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* MENU DE NAVIGATION */
+.navbar {
+margin: 0px;
+padding: 0px;
+background: rgb(8, 96, 153); /*couleur du menu*/
+font-size: 16px;
+font-style: bold;
+}
+
+/*couleur des liens*/
+a{
+color: white;
+}
+
+p{
+font-size: 16px;
+}
+
+/* CONTENU DE LA PAGE */
+#contenu{
+padding: 30px 0 30px 0;
+font-family: "Allerta-Regular";
+}
+
+h1{ /*paramètrages des titres de niveau 1*/
+font-family:"AbrilFatface-Regular";
+font-size: 40px;
+color:#252525; /*couleur des titres h1*/
+text-align:left; /*pour aligner le texte à gauche*/
+margin-bottom:40px;
+margin-left:20px;
+margin-right:20px;
+}
+
+h2{ /*paramètrages des titres de niveau 2*/
+font-family:"myriad pro";
+font-size: 30px;
+color:#4d4d4d; /*couleur des titres h2*/
+margin-bottom:40px;
+margin-left:20px;
+margin-right:20px;
+padding-bottom: 20px;
+}
+
+h3{ /*paramètrages des titres de niveau 3*/
+font-family:"myriad pro";
+font-size: 20px;
+color:#808080;
+text-align:justify;
+margin-bottom:20px;
+margin-left:0px;
+margin-right:20px;
+}
+
+/* PARAMETRAGE IMAGE */
+img.imageGauche {
+float:left; /*image à gauche*/
+margin-right:20px; /*image avec marge à droite de 20px*/
+margin-left:20px; /*image avec marge à gauche de 20px*/
+margin-bottom:20px; /*pour que l'image soit 20px en dessous du titre*/
+}
