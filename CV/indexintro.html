@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styleintro.css">
     <style type="text/css">a:link{text-decoration:none}</style>
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script src="jquery.typist.js"></script>
+
     <title>CV Isabelle Dubois</title>
   </head>
   <body>
@@ -17,15 +20,40 @@
       <source src="videoBackground.mp4" type="video/mp4">
     </video>
 
-<a href="index.html"> <!--lien pour arriver sur le CV-->
+<!--<a href="index.html"> <!--lien pour arriver sur le CV-->
 <div>
 
         <center>
           <h1>Isabelle DUBOIS<br /><br />
-            <small>Développeuse Web Fullstack Junior Javascript</small></h1>
+            <small class="typist">
+          </small></h1>
+
+
+            <a href="index.html"><input type="button" name="Go!" value="    Go!    " style="  border-radius:12px 0 12px 0;
+            	background: rgb(8, 96, 153);
+            	border:none;
+            	color:#fff;
+            	font:bold 20px Verdana;
+            	padding:6px 0 6px 0;"/></a>
         </center>
 </div>
-</a>
+<!--</a> -->
 
-  </body>
+
+
+</div>
+<script>
+$('.typist')
+	.typist({
+		text: 'Développeuse Web Fullstack Junior Javascript'
+	})
+	.typistPause(1500) // 2 sec
+	.typistRemove(44)
+  .typistAdd('Développeuse Web Fullstack Junior Javascript')
+
+	.typistStop();
+
+</script>
+
+</body>
 </html>

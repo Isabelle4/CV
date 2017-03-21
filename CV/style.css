@@ -121,7 +121,7 @@ margin-bottom:20px; /*pour que l'image soit 20px en dessous du titre*/
 
     width: 50%;
     height: 50px;
-    background-color: #f9e538;
+    background-color: #e6d540;
 }
 
 #bootstrap {
@@ -130,7 +130,7 @@ margin-bottom:20px; /*pour que l'image soit 20px en dessous du titre*/
 
     width: 50%;
     height: 50px;
-    background-color: #01dfa5;
+    background-color: #48b69a;
 }
 
 #wordpress {
@@ -139,7 +139,7 @@ margin-bottom:20px; /*pour que l'image soit 20px en dessous du titre*/
 
     width: 50%;
     height: 50px;
-    background-color: #eec340;
+    background-color: #3170d0;
 }
 
 @keyframes Animate-CSS {

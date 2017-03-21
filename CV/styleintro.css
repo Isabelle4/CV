@@ -8,6 +8,7 @@ video{
   width: 100%;
   z-index: -1;
   background: url(../videoBackground.jpg) no-repeat;
+  opacity: 0.9;
   }
 
 div{
