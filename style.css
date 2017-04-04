@@ -11,8 +11,8 @@
   background-color: rgb(195, 215, 235);
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /*margin-top: 50px;
+  margin-bottom: 50px;*/
 }
 /* MENU DE NAVIGATION */
 .navbar {
@@ -52,7 +52,7 @@ h2{ /*paramètrages des titres de niveau 2*/
 font-family:"myriad pro";
 font-size: 30px;
 color:#4d4d4d; /*couleur des titres h2*/
-margin-bottom:40px;
+margin-bottom:20px;
 margin-left:20px;
 margin-right:20px;
 padding-bottom: 20px;
@@ -75,3 +75,131 @@ margin-right:20px; /*image avec marge à droite de 20px*/
 margin-left:20px; /*image avec marge à gauche de 20px*/
 margin-bottom:20px; /*pour que l'image soit 20px en dessous du titre*/
 }
+
+
+/*INFORMATIQUE barres de progression*/
+
+#container {
+    font-size: 20px;
+    width: 95%;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+}
+
+
+.barre {
+    width: 90%;
+    height: 50px;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+
+
+#html {
+    width: 50%;
+    height: 50px;
+    position: relative;
+    animation: Animate-HTML 4.2s;
+    background-color: #5dcaca;
+}
+
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+    }
+    to {
+    width: 50%;
+    }
+}
+
+#css {
+    animation: Animate-CSS 4s;
+    position: relative;
+
+    width: 50%;
+    height: 50px;
+    background-color: #e6d540;
+}
+
+#bootstrap {
+    animation: Animate-CSS 4s;
+    position: relative;
+
+    width: 50%;
+    height: 50px;
+    background-color: #48b69a;
+}
+
+#wordpress {
+    animation: Animate-CSS 4s;
+    position: relative;
+
+    width: 50%;
+    height: 50px;
+    background-color: #3170d0;
+}
+
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+    }
+    to {
+    width: 50%;
+    }
+}
+
+#js {
+    animation: Animate-JS 3.8s;
+    position: relative;
+
+    width: 15%;
+    height: 50px;
+    background-color: #c44e45;
+}
+
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+    }
+    to {
+    width: 15%;
+    }
+
+}
+
+.langage {
+    z-index: 1;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    height: 50px;
+
+    position: absolute; /*Pour centrer le texte de .langage dans la barre de #html (et #css, etc.).*/
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.pourcentage {
+    z-index: 3;
+    opacity: 1;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    animation: percentText 4s;
+
+}
+
+@keyframes percentText{
+    0% {opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*Fin barres de progression*/

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CV Isabelle Dubois</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <style>
+
+		#galerie {
+			width: 550px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			border: 10px solid #fff;
+      border-radius: 5px;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+		}
+		#galerie img {
+			width: 550px;
+			height: 400px;
+		}
+		.container1{
+			width: 550px;
+			height: 400px;
+			margin: 0 auto;
+			margin-top: 50vh;
+      transform: translateY(-50%);
+		}
+		.thumbnail  {
+			width: 80px;
+			height: 80px;
+			border: 2px solid #fff;
+			margin: 10px 5px 0 0;
+			border-radius: 5px;
+		}
+		.thumbnail:hover {
+			cursor: pointer;
+		}
+		.titre {
+			height: 40px;
+			width: 100%;
+			font-size: 30px;
+			color: #fff;
+			background: #000;
+			opacity: 0.5;
+			position: absolute;
+			bottom: 0px;
+			padding-left: 10px;
+		}
+		.selected {
+			border: 2px solid #C63333;
+		}
+    </style>
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+</head>
+
+<div class="container"><!--début container-->
+
+  <!--début header-->
+  <a href="index.html">
+    <div class="row">
+      <div class="header col-md-7">
+         <h1>Isabelle DUBOIS<br/>
+         <small>Développeuse Web FullStack JS</small>
+         </h1>
+     </div>
+     <div class="header col-md-5" style="text-align: right;">
+       <a href="cv.pdf"><strong style="font-size:20px;">Télécharger mon CV</strong></a><br />
+
+     </div>
+   </div><!--fin row-->
+   </a>
+  <!--fin header-->
+
+<!--MENU du CV-->
+     <div class="row">
+     <div class="col-md-12">
+         <nav class="navbar">
+             <ul class="nav nav-tabs nav-justified" role="tablist">
+               <li><a href="formation.html" title="Mes formations"><strong>Formations</strong></a></li>
+               <li><a href="exppro.html" title="Mon parcours professionnel"><strong>Expériences Professionnelles</strong></a></li>
+               <li><a href="informatique.html" title="Mes compétences en informatique"><strong>Informatique</strong></a></li>
+               <li><a href="loisirs.html" title="Mes loisirs, mes compétences.."><strong>Loisirs</strong></a></li>
+               <li><a href="contact.html" title="Me contacter"><strong>Contact</strong></a></li>
+             </ul>
+         </nav>
+     </div>
+     </div>
+</head>
+<!--fin MENU CV-->
+
+<!--bloc d'infos-->
+<body>
+<div id="contenu">
+  <h2>Loisirs</h2>
+  <div class="row">
+  <div class="col-md-12">
+  <div id="container">
+    <h3>Mes passions</h3>
+    <p>
+
+      Photographie || Voyages || Cinéma || Musique || Concerts <br><br>
+      Loisirs Créatifs :<br>
+      Création de bijoux et accessoires artisanaux :
+      <p><a href="https://facebook/yunaki.crea"><img src="images/iconefb.png" height="34px" alt="icone facebook"/></a>
+       <a href="https://instagram.com/isa_yunaki"><img src="images/iconein.png" height="34px" alt="icone instagram"/></a>
+      </p>
+      <br>
+  </p>
+<!--  <div id="photosloisirs">
+  <div class="row">
+                  <div class="col-lg-12 photos">
+
+                          <div class="col-lg-3 photo1">
+                              <img src="photo4.jpg" class="img-circle img-responsive" alt="photo de profil">
+                          </div>
+                          <div class="col-lg-3 photo2">
+                              <img src="photo2.jpg" class="img-circle img-responsive" alt="photo de profil">
+                          </div>
+                          <div class="col-lg-3 photo3">
+                              <img src="photo4.jpg" class="img-circle img-responsive" alt="photo de profil">
+                          </div>
+                          <div class="col-lg-3 photo4">
+                              <img src="photo2.jpg" class="img-circle img-responsive" alt="photo de profil">
+                          </div>
+                      </div> <!fin -->
+              <!-- </div> <!-fin row-->
+
+            </div><!--fin de la row -->
+            </div><!--div contenu-->
+          </div>
+
+              <div class="container1">
+              	<div id="galerie">
+              		<img id="portrait" src="images/photo1" alt="Photo 1">
+              		<div class="titre">Photo 1</div>
+              	</div>
+
+              	<div>
+              		<img class="thumbnail selected" src="images/photo1.jpg"  alt="Photo 1">
+              		<img class="thumbnail" src="images/photo2.jpg"  alt="Photo 2">
+              		<img class="thumbnail" src="images/photo3.jpg"  alt="Photo 3">
+              		<img class="thumbnail" src="images/photo4.jpg"  alt="Photo 4">
+              	</div>
+              </div>
+
+              <script>$(function(){
+  $('.thumbnail').click(function(){
+
+    //On change les attributs de #portrait, on les remplace par les attributs de this
+    //(sous la forme .attr({indice1: élément1, indice2: élément2}))
+    $('#portrait').attr({'src': $(this).attr('src'), 'alt': $(this).attr('alt')});
+
+    //Dans .titre, on écrit la valeur de #portrait (attribut 'alt').
+    $('.titre').text($('#portrait').attr('alt'));
+
+    //On supprime toutes les class 'selected'
+    $('.thumbnail').removeClass('selected');
+    //Quand c'est fait, on ajoute 'selected' sur l'élément cliqué
+    $(this).addClass('selected');
+
+
+  })
+});
+</script>
+
+
+
+</div><!--fin div contenu-->
+
+</body>
+</html>
